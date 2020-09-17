@@ -1,13 +1,12 @@
-val name: String = "Philip"
-var greeting: String? = null
+
+fun getGreeting() = "Hello Kotlin"
+
+fun sayHello() {
+    println(getGreeting())
+}
 
 fun main(){
-    //greeting = "Hello"
-    val greetingToPrint = when(greeting){
-        null -> "Hi"
-        else -> greeting
-    }
-    println(greetingToPrint)
-    println(name)
-
+    println("Hello World")
+    println(getGreeting())
+    sayHello()
 }
